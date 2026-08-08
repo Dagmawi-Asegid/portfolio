@@ -3,6 +3,8 @@ export const profile = {
   role: "CS & Math Student @ Vassar College",
   location: "Poughkeepsie, NY",
   email: "dagmawi2219@gmail.com",
+  contactEmail: "dagmawidesta2219@gmail.com",
+  avatar: "/images/avatar.jpg",
   github: "https://github.com/Dagmawi-Asegid",
   githubHandle: "Dagmawi-Asegid",
   linkedin: "https://linkedin.com/in/dagmawi-asegid-a036003a5",
@@ -105,6 +107,7 @@ export type Project = {
   stack: string[];
   href?: string;
   featured?: boolean;
+  images?: string[];
 };
 
 export const projects: Project[] = [
@@ -115,6 +118,12 @@ export const projects: Project[] = [
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Supabase"],
     href: "https://github.com/Dagmawi-Asegid/vassar-africans",
     featured: true,
+    images: [
+      "/images/projects/vassar-africans/hero.png",
+      "/images/projects/vassar-africans/resources.png",
+      "/images/projects/vassar-africans/login.png",
+      "/images/projects/vassar-africans/signup.png",
+    ],
   },
   {
     title: "Employee Management System",
@@ -161,16 +170,16 @@ export const skills: { category: string; items: string[] }[] = [
     items: ["Python", "JavaScript/TypeScript", "Java", "C/C++", "Kotlin", "OCaml", "SQL"],
   },
   {
-    category: "Frameworks & Libraries",
-    items: ["React.js", "Next.js", "Node.js", "Express.js", "Flask", "Spring Boot", "Tailwind CSS"],
+    category: "Frameworks",
+    items: ["React.js", "Next.js", "Node.js", "Express.js", "Flask", "Spring Boot"],
   },
   {
-    category: "Databases & Backend",
+    category: "Data",
     items: ["PostgreSQL", "MongoDB", "MySQL", "Firebase", "REST API design"],
   },
   {
     category: "Tools",
-    items: ["Git", "GitHub", "CI/CD"],
+    items: ["Git", "GitHub", "CI/CD", "Tailwind CSS"],
   },
 ];
 
