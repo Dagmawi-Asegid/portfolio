@@ -137,8 +137,8 @@ export const projects: Project[] = [
   {
     title: "Lunch Box",
     description:
-      "Android app for searching, rating, and reviewing restaurants, with sorting and filtering by name, location, and rating. Kotlin + Firebase Auth/Firestore, MVVM architecture. Built and tested end-to-end on a real emulator against the Firebase Local Emulator Suite.",
-    stack: ["Kotlin", "Firebase", "Android SDK"],
+      "Android app for finding real nearby restaurants on an interactive map (free OpenStreetMap Overpass API, no billing), getting directions, ordering (demo), and leaving reviews. Kotlin + Firebase Auth/Firestore, MVVM architecture. Built and tested end-to-end on a real emulator and a real Firebase backend.",
+    stack: ["Kotlin", "Firebase", "Android SDK", "OpenStreetMap"],
     href: "https://lunch-box-showcase.vercel.app",
     images: ["/images/projects/lunch-box/hero.png"],
   },
