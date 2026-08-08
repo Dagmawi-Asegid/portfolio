@@ -21,7 +21,7 @@ export default function About() {
             <p className="text-sm font-medium text-foreground">{education.school}</p>
             <p className="text-sm text-foreground/70">{education.degree}</p>
             <p className="mt-1 font-mono text-xs text-muted">
-              {education.period} &middot; GPA {education.gpa}
+              {education.period}
             </p>
           </div>
 

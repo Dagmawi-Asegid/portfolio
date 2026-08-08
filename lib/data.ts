@@ -199,7 +199,6 @@ export const education = {
   location: "Poughkeepsie, NY",
   degree: "B.S. in Computer Science and Mathematics",
   period: "Expected May 2029",
-  gpa: "3.91",
 };
 
 export const honors = [
