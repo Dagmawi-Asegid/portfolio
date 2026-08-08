@@ -1,0 +1,191 @@
+export const profile = {
+  name: "Dagmawi Asegid",
+  role: "CS & Math Student @ Vassar College",
+  location: "Poughkeepsie, NY",
+  email: "dagmawi2219@gmail.com",
+  github: "https://github.com/Dagmawi-Asegid",
+  githubHandle: "Dagmawi-Asegid",
+  linkedin: "https://linkedin.com/in/dagmawi-asegid-a036003a5",
+  linkedinHandle: "dagmawi-asegid-a036003a5",
+  tagline:
+    "Building full-stack software and figuring out the fastest way to actually understand something new.",
+  bio: [
+    "I grew up in Debre Markos, Ethiopia, before coming to Vassar College to study Computer Science and Mathematics. Back home I built my high school's first website from scratch, which is honestly what got me hooked on software in the first place.",
+    "At Vassar I'm president of the African Students Union, where I lead the team building our own web platform for around 150 members, and I work IT support for the whole campus. This fall I'm starting as a teaching assistant for our functional programming course.",
+    "I'm bilingual in English and Amharic, and I spent last summer mentoring Ethiopian high schoolers through the U.S. college application process. I care about building things that work for people outside the default assumption of who's using them.",
+  ],
+};
+
+export type Job = {
+  role: string;
+  org: string;
+  location: string;
+  period: string;
+  bullets: string[];
+};
+
+export const experience: Job[] = [
+  {
+    role: "Computing & Information Services (CIS) Assistant",
+    org: "Vassar College Computing and Information Services",
+    location: "Poughkeepsie, NY",
+    period: "Sep 2025 — Present",
+    bullets: [
+      "First point of contact for technical support across campus, resolving issues on Windows, macOS, mobile, and campus applications.",
+      "Troubleshoot network connectivity, printer/scanner access, and account-related issues.",
+      "Escalate complex technical issues to specialized IT teams while maintaining clear documentation.",
+    ],
+  },
+  {
+    role: "Teaching Assistant — CS 145: Foundations of Functional Programming (OCaml)",
+    org: "Vassar College Department of Computer Science",
+    location: "Poughkeepsie, NY",
+    period: "Fall 2026 (Incoming)",
+    bullets: [
+      "Selected to support the Fall 2026 offering of CS 145, assisting students with OCaml syntax, functional programming concepts, and problem set debugging.",
+    ],
+  },
+  {
+    role: "Teaching Assistant — Mathematics (Calculus)",
+    org: "Vassar College Department of Mathematics",
+    location: "Poughkeepsie, NY",
+    period: "Spring 2026",
+    bullets: [
+      "Held weekly office hours, helping students work through problem sets and prepare for exams.",
+      "Graded homework and quizzes, providing feedback to reinforce core calculus concepts.",
+      "Led small-group review sessions ahead of midterms and finals.",
+    ],
+  },
+  {
+    role: "Web Editor Intern",
+    org: "Vassar College International Students Office",
+    location: "Poughkeepsie, NY",
+    period: "Dec 2025 — Present",
+    bullets: [
+      "Collaborate with IT staff to improve website accessibility, usability, and content clarity for international students.",
+      "Manage and publish web content on international student resources, immigration policies, and campus events via the college's CMS.",
+    ],
+  },
+  {
+    role: "President",
+    org: "Vassar African Students Union",
+    location: "Poughkeepsie, NY",
+    period: "Oct 2025 — Present",
+    bullets: [
+      "Lead the executive board organizing cultural, social, and community events — including Afro Eat and the Afro Fashion Feast — for roughly 150 African students at Vassar.",
+      "Set strategic direction and represent VASU in campus-wide student government and administration meetings.",
+      "Connect new African students to campus resources, peer support, and community guidance to ease their transition.",
+    ],
+  },
+  {
+    role: "Secretary & Executive Board Member",
+    org: "VC++ (Vassar College Computer Science Club)",
+    location: "Poughkeepsie, NY",
+    period: "Oct 2025 — Present",
+    bullets: [
+      "Manage club communications, meeting agendas, and minutes.",
+      "Co-organized a campus-wide hackathon for Vassar's tech students, coordinating logistics, registration, and judging.",
+    ],
+  },
+  {
+    role: "Instructor / Mentor (Volunteer)",
+    org: "CTP Ethiopia (College and Test Preparation Ethiopia)",
+    location: "Addis Ababa, Ethiopia",
+    period: "Jun 2025 — Aug 2025",
+    bullets: [
+      "Instructed and mentored Ethiopian students on the U.S. college application process — university selection, essay writing, and application strategy.",
+      "Helped facilitate financial aid for testing and application fees for students from rural areas, expanding access to international education.",
+    ],
+  },
+];
+
+export type Project = {
+  title: string;
+  description: string;
+  stack: string[];
+  href?: string;
+  featured?: boolean;
+};
+
+export const projects: Project[] = [
+  {
+    title: "Vassar African Students Association Website",
+    description:
+      "Official web platform for VASU: a dynamic landing page, secure student-only sign-up/login flow, an internal resource hub (SSN, CPT/OPT, housing, insurance guides), and an internal dashboard/chat system. Live and in active use by ~150 members.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Supabase"],
+    href: "https://github.com/Dagmawi-Asegid/vassar-africans",
+    featured: true,
+  },
+  {
+    title: "Employee Management System",
+    description:
+      "Solo backend project: a RESTful API for full CRUD management of employee records, with MySQL persistence and a layered controller/service/repository architecture.",
+    stack: ["Java", "Spring Boot", "MySQL", "REST API"],
+    featured: true,
+  },
+  {
+    title: "Lunch Box",
+    description:
+      "Android app for searching, rating, and reviewing restaurants, with sorting and filtering by name, location, and rating. Built with a team, using Firebase for auth and data persistence.",
+    stack: ["Kotlin", "Firebase", "Android SDK"],
+  },
+  {
+    title: "Exchange Rate Predictor",
+    description:
+      "Full-stack web app predicting currency exchange rates, with a React frontend and a Flask backend integrating real-time exchange-rate API data.",
+    stack: ["React.js", "Python", "Flask", "REST API"],
+  },
+  {
+    title: "Cryptocurrency Market Trends Dashboard",
+    description:
+      "Fetches real-time cryptocurrency market data from live APIs and visualizes price trends and market movements.",
+    stack: ["JavaScript", "Chart.js", "REST APIs"],
+  },
+  {
+    title: "Weather Dashboard",
+    description:
+      "Interactive dashboard displaying current conditions and forecasts using the OpenWeather API.",
+    stack: ["JavaScript", "OpenWeather API"],
+  },
+  {
+    title: "Debre Markos High School Website",
+    description:
+      "Designed and built a website for my high school in Ethiopia, with responsive pages for school info, announcements, and contact details.",
+    stack: ["HTML", "CSS", "JavaScript"],
+  },
+];
+
+export const skills: { category: string; items: string[] }[] = [
+  {
+    category: "Languages",
+    items: ["Python", "JavaScript/TypeScript", "Java", "C/C++", "Kotlin", "OCaml", "SQL"],
+  },
+  {
+    category: "Frameworks & Libraries",
+    items: ["React.js", "Next.js", "Node.js", "Express.js", "Flask", "Spring Boot", "Tailwind CSS"],
+  },
+  {
+    category: "Databases & Backend",
+    items: ["PostgreSQL", "MongoDB", "MySQL", "Firebase", "REST API design"],
+  },
+  {
+    category: "Tools",
+    items: ["Git", "GitHub", "CI/CD"],
+  },
+];
+
+export const education = {
+  school: "Vassar College",
+  location: "Poughkeepsie, NY",
+  degree: "B.S. in Computer Science and Mathematics",
+  period: "Expected May 2029",
+  gpa: "3.91",
+};
+
+export const honors = [
+  {
+    title: "3rd Place, Mind Plus Math Recognition",
+    org: "Ethiopian Ministry of Education",
+    date: "May 2022",
+  },
+];
