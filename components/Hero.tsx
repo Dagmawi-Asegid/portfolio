@@ -14,7 +14,7 @@ export default function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
-            available for Summer 2027 internships
+            available for internships
           </div>
 
           <p className="mb-3 font-mono text-sm text-accent">
@@ -58,12 +58,12 @@ export default function Hero() {
         </div>
 
         <div className="relative shrink-0">
-          <div className="relative h-36 w-36 overflow-hidden rounded-2xl border border-surface-border bg-surface sm:h-44 sm:w-44">
+          <div className="relative h-44 w-44 overflow-hidden rounded-2xl border border-surface-border bg-surface sm:h-56 sm:w-56">
             <Image
               src={profile.avatar}
               alt={profile.name}
               fill
-              sizes="176px"
+              sizes="224px"
               className="object-cover"
               priority
             />

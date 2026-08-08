@@ -116,7 +116,7 @@ export const projects: Project[] = [
     description:
       "Official web platform for VASU: a dynamic landing page, secure student-only sign-up/login flow, an internal resource hub (SSN, CPT/OPT, housing, insurance guides), and an internal dashboard/chat system. Live and in active use by ~150 members.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Supabase"],
-    href: "https://github.com/Dagmawi-Asegid/vassar-africans",
+    href: "https://vassar-africans.vercel.app",
     featured: true,
     images: [
       "/images/projects/vassar-africans/hero.png",
@@ -139,14 +139,14 @@ export const projects: Project[] = [
     description:
       "Android app for searching, rating, and reviewing restaurants, with sorting and filtering by name, location, and rating. Kotlin + Firebase Auth/Firestore, MVVM architecture.",
     stack: ["Kotlin", "Firebase", "Android SDK"],
-    href: "https://github.com/Dagmawi-Asegid/lunch-box",
+    href: "https://lunch-box-showcase.vercel.app",
   },
   {
     title: "Exchange Rate Predictor",
     description:
       "Full-stack web app predicting currency exchange rates, with a React frontend and a Flask backend running a linear-regression trend forecast over live FX history.",
     stack: ["React.js", "Python", "Flask", "REST API"],
-    href: "https://github.com/Dagmawi-Asegid/exchange-rate-predictor",
+    href: "https://exchange-rate-predictor.vercel.app",
     images: ["/images/projects/exchange-rate-predictor/hero.jpg"],
   },
   {
@@ -154,7 +154,7 @@ export const projects: Project[] = [
     description:
       "Fetches real-time cryptocurrency market data from the CoinGecko API and visualizes price trends and market movements with Chart.js.",
     stack: ["JavaScript", "Chart.js", "REST APIs"],
-    href: "https://github.com/Dagmawi-Asegid/crypto-dashboard",
+    href: "https://crypto-dashboard-puce-five.vercel.app",
     images: ["/images/projects/crypto-dashboard/hero.jpg"],
   },
   {
@@ -162,7 +162,7 @@ export const projects: Project[] = [
     description:
       "Interactive dashboard displaying current conditions and a 5-day forecast for any searched city, using the Open-Meteo API.",
     stack: ["JavaScript", "Open-Meteo API"],
-    href: "https://github.com/Dagmawi-Asegid/weather-dashboard",
+    href: "https://weather-dashboard-seven-pied.vercel.app",
     images: ["/images/projects/weather-dashboard/hero.jpg"],
   },
   {
@@ -170,7 +170,7 @@ export const projects: Project[] = [
     description:
       "Designed and built a website for my high school in Ethiopia, with responsive pages for school info, announcements, and contact details.",
     stack: ["HTML", "CSS", "JavaScript"],
-    href: "https://github.com/Dagmawi-Asegid/debre-markos-hs",
+    href: "https://debre-markos-hs.vercel.app",
     images: ["/images/projects/debre-markos-hs/hero.jpg"],
   },
 ];
