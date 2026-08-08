@@ -128,39 +128,50 @@ export const projects: Project[] = [
   {
     title: "Employee Management System",
     description:
-      "Solo backend project: a RESTful API for full CRUD management of employee records, with MySQL persistence and a layered controller/service/repository architecture.",
+      "Solo backend project: a RESTful API for full CRUD management of employee records, with MySQL persistence and a layered controller/service/repository architecture. Includes OpenAPI/Swagger docs and validation on every endpoint.",
     stack: ["Java", "Spring Boot", "MySQL", "REST API"],
+    href: "https://github.com/Dagmawi-Asegid/employee-management-system",
     featured: true,
+    images: ["/images/projects/employee-management-system/hero.jpg"],
   },
   {
     title: "Lunch Box",
     description:
-      "Android app for searching, rating, and reviewing restaurants, with sorting and filtering by name, location, and rating. Built with a team, using Firebase for auth and data persistence.",
+      "Android app for searching, rating, and reviewing restaurants, with sorting and filtering by name, location, and rating. Kotlin + Firebase Auth/Firestore, MVVM architecture.",
     stack: ["Kotlin", "Firebase", "Android SDK"],
+    href: "https://github.com/Dagmawi-Asegid/lunch-box",
   },
   {
     title: "Exchange Rate Predictor",
     description:
-      "Full-stack web app predicting currency exchange rates, with a React frontend and a Flask backend integrating real-time exchange-rate API data.",
+      "Full-stack web app predicting currency exchange rates, with a React frontend and a Flask backend running a linear-regression trend forecast over live FX history.",
     stack: ["React.js", "Python", "Flask", "REST API"],
+    href: "https://github.com/Dagmawi-Asegid/exchange-rate-predictor",
+    images: ["/images/projects/exchange-rate-predictor/hero.jpg"],
   },
   {
     title: "Cryptocurrency Market Trends Dashboard",
     description:
-      "Fetches real-time cryptocurrency market data from live APIs and visualizes price trends and market movements.",
+      "Fetches real-time cryptocurrency market data from the CoinGecko API and visualizes price trends and market movements with Chart.js.",
     stack: ["JavaScript", "Chart.js", "REST APIs"],
+    href: "https://github.com/Dagmawi-Asegid/crypto-dashboard",
+    images: ["/images/projects/crypto-dashboard/hero.jpg"],
   },
   {
     title: "Weather Dashboard",
     description:
-      "Interactive dashboard displaying current conditions and forecasts using the OpenWeather API.",
-    stack: ["JavaScript", "OpenWeather API"],
+      "Interactive dashboard displaying current conditions and a 5-day forecast for any searched city, using the Open-Meteo API.",
+    stack: ["JavaScript", "Open-Meteo API"],
+    href: "https://github.com/Dagmawi-Asegid/weather-dashboard",
+    images: ["/images/projects/weather-dashboard/hero.jpg"],
   },
   {
     title: "Debre Markos High School Website",
     description:
       "Designed and built a website for my high school in Ethiopia, with responsive pages for school info, announcements, and contact details.",
     stack: ["HTML", "CSS", "JavaScript"],
+    href: "https://github.com/Dagmawi-Asegid/debre-markos-hs",
+    images: ["/images/projects/debre-markos-hs/hero.jpg"],
   },
 ];
 

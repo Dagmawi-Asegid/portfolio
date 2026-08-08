@@ -27,7 +27,11 @@ export default function Projects() {
               } ${project.featured ? "sm:col-span-2" : ""}`}
             >
               {project.images && project.images.length > 0 && (
-                <div className="grid grid-cols-2 gap-px bg-surface-border sm:grid-cols-4">
+                <div
+                  className={`grid gap-px bg-surface-border ${
+                    project.images.length > 1 ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-1"
+                  }`}
+                >
                   {project.images.map((src) => (
                     <div
                       key={src}
@@ -37,7 +41,7 @@ export default function Projects() {
                         src={src}
                         alt={`${project.title} screenshot`}
                         fill
-                        sizes="(min-width: 640px) 25vw, 50vw"
+                        sizes={project.images!.length > 1 ? "(min-width: 640px) 25vw, 50vw" : "(min-width: 640px) 50vw, 100vw"}
                         className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
                       />
                     </div>
