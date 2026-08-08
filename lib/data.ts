@@ -167,7 +167,7 @@ export const projects: Project[] = [
 export const skills: { category: string; items: string[] }[] = [
   {
     category: "Languages",
-    items: ["Python", "JavaScript/TypeScript", "Java", "C/C++", "Kotlin", "OCaml", "SQL"],
+    items: ["Python", "JavaScript", "TypeScript", "Java", "C", "C++", "Kotlin", "OCaml", "SQL"],
   },
   {
     category: "Frameworks",

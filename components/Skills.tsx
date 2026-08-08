@@ -1,4 +1,5 @@
 import { skills } from "@/lib/data";
+import { skillIcons } from "@/lib/skillIcons";
 import SectionHeading from "./SectionHeading";
 
 export default function Skills() {
@@ -13,14 +14,20 @@ export default function Skills() {
               {group.category}
             </p>
             <div className="flex flex-wrap gap-2">
-              {group.items.map((item) => (
-                <span
-                  key={item}
-                  className="rounded-full border border-surface-border bg-surface px-3 py-1.5 text-sm text-foreground/80 transition-colors hover:border-accent-dim/50 hover:text-foreground"
-                >
-                  {item}
-                </span>
-              ))}
+              {group.items.map((item) => {
+                const iconEntry = skillIcons[item];
+                return (
+                  <span
+                    key={item}
+                    className="flex items-center gap-1.5 rounded-full border border-surface-border bg-surface px-3 py-1.5 text-sm text-foreground/80 transition-colors hover:border-accent-dim/50 hover:text-foreground"
+                  >
+                    {iconEntry && (
+                      <iconEntry.Icon size={14} color={iconEntry.color} />
+                    )}
+                    {item}
+                  </span>
+                );
+              })}
             </div>
           </div>
         ))}

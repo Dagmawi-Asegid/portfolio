@@ -10,6 +10,16 @@
   --accent-dim: #22c55e;
 }
 
+.light {
+  --background: #f7f6f2;
+  --surface: #ffffff;
+  --surface-border: #e3e1d9;
+  --foreground: #17181c;
+  --muted: #6b7076;
+  --accent: #16a34a;
+  --accent-dim: #15803d;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-surface: var(--surface);
