@@ -179,7 +179,7 @@ export const projects: Project[] = [
 export const skills: { category: string; items: string[] }[] = [
   {
     category: "Languages",
-    items: ["Python", "JavaScript", "TypeScript", "Java", "C", "C++", "Kotlin", "OCaml", "SQL"],
+    items: ["Python", "JavaScript", "TypeScript", "Java", "C", "C++", "Kotlin", "OCaml"],
   },
   {
     category: "Frameworks",
@@ -187,11 +187,15 @@ export const skills: { category: string; items: string[] }[] = [
   },
   {
     category: "Data",
-    items: ["PostgreSQL", "MongoDB", "MySQL", "Firebase", "REST API design"],
+    items: ["SQL", "PostgreSQL", "MongoDB", "MySQL", "Firebase", "REST API design"],
   },
   {
     category: "Tools",
-    items: ["Git", "GitHub", "CI/CD", "Tailwind CSS"],
+    items: ["Docker", "Vercel", "CI/CD", "Tailwind CSS"],
+  },
+  {
+    category: "Version Control",
+    items: ["Git", "GitHub"],
   },
 ];
 

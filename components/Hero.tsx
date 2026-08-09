@@ -58,12 +58,12 @@ export default function Hero() {
         </div>
 
         <div className="relative shrink-0">
-          <div className="relative h-44 w-44 overflow-hidden rounded-2xl border border-surface-border bg-surface sm:h-56 sm:w-56">
+          <div className="relative h-52 w-52 overflow-hidden rounded-2xl border border-surface-border bg-surface sm:h-64 sm:w-64">
             <Image
               src={profile.avatar}
               alt={profile.name}
               fill
-              sizes="224px"
+              sizes="256px"
               className="object-cover"
               priority
             />

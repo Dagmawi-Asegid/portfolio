@@ -8,6 +8,10 @@ export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
+  // The server can't know the theme stored in localStorage, so resolvedTheme
+  // is undefined until next-themes resolves it client-side; gating on mount
+  // avoids rendering the wrong icon and mismatching the server-rendered HTML.
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => setMounted(true), []);
 
   const isDark = mounted && resolvedTheme === "dark";

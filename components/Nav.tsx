@@ -31,14 +31,6 @@ export default function Nav() {
           ))}
         </ul>
         <div className="flex items-center gap-3">
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-md border border-surface-border bg-surface px-3 py-1.5 font-mono text-xs text-foreground/80 transition-colors hover:border-accent-dim/50 hover:text-foreground"
-          >
-            resume &#8599;
-          </a>
           <ThemeToggle />
         </div>
       </nav>

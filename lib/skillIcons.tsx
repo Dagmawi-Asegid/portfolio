@@ -21,6 +21,8 @@ import {
   SiGit,
   SiGithub,
   SiTailwindcss,
+  SiDocker,
+  SiVercel,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { FaInfinity } from "react-icons/fa6";
@@ -50,4 +52,6 @@ export const skillIcons: Record<string, { Icon: IconType; color: string }> = {
   GitHub: { Icon: SiGithub, color: "currentColor" },
   "CI/CD": { Icon: FaInfinity, color: "#8b909c" },
   "Tailwind CSS": { Icon: SiTailwindcss, color: "#38BDF8" },
+  Docker: { Icon: SiDocker, color: "#2496ED" },
+  Vercel: { Icon: SiVercel, color: "currentColor" },
 };
