@@ -1,5 +1,8 @@
 node_modules
 .next
+CLAUDE.md
+AGENTS.md
+.claude/
 .env*.local
 .vercel
 *.log
