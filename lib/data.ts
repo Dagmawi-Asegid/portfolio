@@ -143,6 +143,20 @@ export const projects: Project[] = [
     images: ["/images/projects/lunch-box/hero.png"],
   },
   {
+    title: "Midnight Courier",
+    description:
+      "A top-down neon night-city bike-delivery game built from scratch on HTML5 Canvas: procedurally generated city with five distinct districts, physics-based bike handling with drift and boost, traffic AI with lights and NPC vehicles, a minimap and navigation system, and a fully custom, polished UI with pause/settings menus, all persisted locally.",
+    stack: ["React", "Vite", "JavaScript", "HTML5 Canvas", "Web Audio API"],
+    href: "https://github.com/Dagmawi-Asegid/midnight-courier",
+    featured: true,
+    images: [
+      "/images/projects/midnight-courier/hero.jpg",
+      "/images/projects/midnight-courier/menu.jpg",
+      "/images/projects/midnight-courier/settings.jpg",
+      "/images/projects/midnight-courier/garage.jpg",
+    ],
+  },
+  {
     title: "Exchange Rate Predictor",
     description:
       "Full-stack web app predicting currency exchange rates, with a React frontend and a Flask backend running a linear-regression trend forecast over live FX history.",
