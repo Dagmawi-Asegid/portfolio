@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { profile } from "@/lib/data";
 import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -24,9 +25,14 @@ export default function Contact() {
 
   return (
     <section id="contact" className="mx-auto max-w-4xl px-6 py-16 sm:py-20">
-      <SectionHeading index="05" title="let's talk" command="./send_message.sh" />
+      <Reveal>
+        <SectionHeading index="05" title="let's talk" command="./send_message.sh" />
+      </Reveal>
 
-      <div className="grid gap-8 rounded-lg border border-surface-border bg-surface p-8 sm:grid-cols-2 sm:p-10">
+      <Reveal
+        delay={0.1}
+        className="grid gap-8 rounded-lg border border-surface-border bg-surface p-8 sm:grid-cols-2 sm:p-10"
+      >
         <div>
           <p className="max-w-sm text-base leading-relaxed text-foreground/80">
             I&apos;m looking for a Summer 2027 Software Engineering internship.
@@ -95,7 +101,7 @@ export default function Contact() {
             opens your email client, addressed to me
           </p>
         </form>
-      </div>
+      </Reveal>
 
       <footer className="mt-12 flex flex-col items-center gap-1 pb-4 font-mono text-xs text-muted sm:flex-row sm:justify-between">
         <span>

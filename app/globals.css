@@ -8,9 +8,12 @@
   --muted: #8b909c;
   --accent: #4ade80;
   --accent-dim: #22c55e;
-  --grid-line: rgba(255, 255, 255, 0.045);
+  --grid-line: rgba(255, 255, 255, 0.06);
   --glow-primary: rgba(74, 222, 128, 0.16);
   --glow-secondary: rgba(56, 189, 248, 0.09);
+  --blob-a: rgba(74, 222, 128, 0.32);
+  --blob-b: rgba(56, 189, 248, 0.22);
+  --blob-c: rgba(168, 122, 248, 0.2);
 }
 
 .light {
@@ -21,9 +24,12 @@
   --muted: #6b7076;
   --accent: #16a34a;
   --accent-dim: #15803d;
-  --grid-line: rgba(23, 24, 28, 0.05);
+  --grid-line: rgba(23, 24, 28, 0.06);
   --glow-primary: rgba(22, 163, 74, 0.1);
   --glow-secondary: rgba(14, 165, 233, 0.07);
+  --blob-a: rgba(22, 163, 74, 0.22);
+  --blob-b: rgba(14, 165, 233, 0.16);
+  --blob-c: rgba(147, 51, 234, 0.14);
 }
 
 @theme inline {
@@ -56,19 +62,104 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background-image:
-    radial-gradient(circle at 12% 8%, var(--glow-primary), transparent 42%),
-    radial-gradient(circle at 88% 28%, var(--glow-secondary), transparent 40%),
-    radial-gradient(circle at 50% 92%, var(--glow-primary), transparent 45%),
     linear-gradient(var(--grid-line) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-  background-size:
-    auto,
-    auto,
-    auto,
-    56px 56px,
-    56px 56px;
+  background-size: 56px 56px;
   mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 35%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 35%, transparent 100%);
+}
+
+.ambient-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ambient-bg span {
+  position: absolute;
+  border-radius: 9999px;
+  will-change: transform;
+}
+
+.ambient-bg .blob-a {
+  top: -20%;
+  left: -10%;
+  height: 65vh;
+  width: 65vh;
+  background: radial-gradient(circle, var(--blob-a) 0%, transparent 70%);
+  animation: drift-a 24s ease-in-out infinite alternate;
+}
+
+.ambient-bg .blob-b {
+  top: 0%;
+  right: -15%;
+  height: 58vh;
+  width: 58vh;
+  background: radial-gradient(circle, var(--blob-b) 0%, transparent 70%);
+  animation: drift-b 28s ease-in-out infinite alternate;
+}
+
+.ambient-bg .blob-c {
+  bottom: -25%;
+  left: 25%;
+  height: 62vh;
+  width: 62vh;
+  background: radial-gradient(circle, var(--blob-c) 0%, transparent 70%);
+  animation: drift-c 32s ease-in-out infinite alternate;
+}
+
+@keyframes drift-a {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(6vw, 8vh) scale(1.12);
+  }
+}
+
+@keyframes drift-b {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(-7vw, 6vh) scale(1.08);
+  }
+}
+
+@keyframes drift-c {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(4vw, -6vh) scale(1.1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-bg span {
+    animation: none;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.21, 0.47, 0.32, 0.98), transform 0.6s cubic-bezier(0.21, 0.47, 0.32, 0.98);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 ::selection {
