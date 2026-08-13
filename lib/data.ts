@@ -159,7 +159,7 @@ export const projects: Project[] = [
   {
     title: "Exchange Rate Predictor",
     description:
-      "Full-stack web app predicting currency exchange rates, with a React frontend and a Flask backend running a linear-regression trend forecast over live FX history.",
+      "Full-stack web app forecasting currency trends over live FX history, with a Flask backend and a React frontend that surfaces rule-based takeaways for policymakers, exporters/importers, and individuals based on the trend and volatility.",
     stack: ["React.js", "Python", "Flask", "REST API"],
     href: "https://exchange-rate-predictor.vercel.app",
     images: ["/images/projects/exchange-rate-predictor/hero.jpg"],
