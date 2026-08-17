@@ -143,6 +143,14 @@ export const projects: Project[] = [
     images: ["/images/projects/lunch-box/hero.png"],
   },
   {
+    title: "Cryptocurrency Market Trends Dashboard",
+    description:
+      "Fetches real-time cryptocurrency market data from the CoinGecko API and visualizes price trends and market movements with Chart.js.",
+    stack: ["JavaScript", "Chart.js", "REST APIs"],
+    href: "https://crypto-dashboard-puce-five.vercel.app",
+    images: ["/images/projects/crypto-dashboard/hero.jpg"],
+  },
+  {
     title: "Midnight Courier",
     description:
       "A top-down neon night-city bike-delivery game built from scratch on HTML5 Canvas: procedurally generated city with five distinct districts, physics-based bike handling with drift and boost, traffic AI with lights and NPC vehicles, a minimap and navigation system, and a fully custom, polished UI with pause/settings menus, all persisted locally.",
@@ -163,14 +171,6 @@ export const projects: Project[] = [
     stack: ["React.js", "Python", "Flask", "REST API"],
     href: "https://exchange-rate-predictor.vercel.app",
     images: ["/images/projects/exchange-rate-predictor/hero.jpg"],
-  },
-  {
-    title: "Cryptocurrency Market Trends Dashboard",
-    description:
-      "Fetches real-time cryptocurrency market data from the CoinGecko API and visualizes price trends and market movements with Chart.js.",
-    stack: ["JavaScript", "Chart.js", "REST APIs"],
-    href: "https://crypto-dashboard-puce-five.vercel.app",
-    images: ["/images/projects/crypto-dashboard/hero.jpg"],
   },
   {
     title: "Weather Dashboard",
