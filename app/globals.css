@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0b0d;
+  --background: #0a0c16;
   --surface: #111318;
   --surface-border: #23262e;
   --foreground: #e4e6eb;
@@ -17,7 +17,7 @@
 }
 
 .light {
-  --background: #f7f6f2;
+  --background: #f4f6fb;
   --surface: #ffffff;
   --surface-border: #e3e1d9;
   --foreground: #17181c;
