@@ -31,6 +31,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <span className="blob-a" />
           <span className="blob-b" />
           <span className="blob-c" />
+          <span className="diamond d1" />
+          <span className="diamond d2" />
+          <span className="diamond d3" />
+          <span className="diamond d4" />
+          <span className="diamond d5" />
+          <span className="diamond d6" />
+          <span className="diamond d7" />
+          <span className="diamond d8" />
+          <span className="diamond d9" />
         </div>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {children}
