@@ -114,8 +114,8 @@ export const projects: Project[] = [
   {
     title: "Vassar African Students Association Website",
     description:
-      "Official web platform for VASU: a dynamic landing page, secure student-only sign-up/login flow, an internal resource hub (SSN, CPT/OPT, housing, insurance guides), and an internal dashboard/chat system. Live and in active use by ~150 members.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Supabase"],
+      "Official web platform for VASU: an interactive 3D landing page (Three.js/WebGL hero), secure student-only sign-up/login flow, an internal resource hub (SSN, CPT/OPT, housing, insurance guides), and an internal dashboard/chat system. Live and in active use by ~150 members.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Three.js", "Framer Motion", "Supabase"],
     href: "https://vassar-africans.vercel.app",
     featured: true,
     images: [
