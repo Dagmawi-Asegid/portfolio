@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { profile } from "@/lib/data";
 import ThemeProvider from "@/components/ThemeProvider";
+import ScrollProgress from "@/components/ScrollProgress";
+import CommandPalette from "@/components/CommandPalette";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,7 +44,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <span className="diamond d9" />
         </div>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          <ScrollProgress />
           {children}
+          <CommandPalette />
         </ThemeProvider>
       </body>
     </html>

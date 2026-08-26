@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { profile } from "@/lib/data";
 import Reveal from "./Reveal";
+import TypewriterRole from "./TypewriterRole";
 
 export default function Hero() {
   return (
@@ -31,8 +32,8 @@ export default function Hero() {
             </h1>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="mt-3 font-mono text-base text-muted sm:text-lg">
-              {profile.role}
+            <p className="mt-3 min-h-[1.75rem] font-mono text-base text-muted sm:text-lg">
+              <TypewriterRole roles={profile.identities} />
             </p>
           </Reveal>
 

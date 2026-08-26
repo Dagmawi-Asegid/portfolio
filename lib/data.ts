@@ -11,6 +11,12 @@ export const profile = {
   linkedinHandle: "dagmawi-asegid-a036003a5",
   tagline:
     "Building full-stack software and figuring out the fastest way to actually understand something new.",
+  identities: [
+    "CS & Math Student @ Vassar College",
+    "Full-Stack Developer",
+    "VASU President",
+    "Campus IT Support",
+  ],
   bio: [
     "I grew up in Debre Markos, Ethiopia, before coming to Vassar College to study Computer Science and Mathematics. Back home I built my high school's first website from scratch, which is honestly what got me hooked on software in the first place.",
     "At Vassar I'm president of the African Students Union, where I lead the team building our own web platform for around 150 members, and I work IT support for the whole campus. This fall I'm starting as a teaching assistant for our functional programming course.",
