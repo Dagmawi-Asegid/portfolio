@@ -13,6 +13,7 @@ export const profile = {
     "Building full-stack software and figuring out the fastest way to actually understand something new.",
   identities: [
     "CS & Math Student @ Vassar College",
+    "SWE Intern @ Eugenia Grace",
     "Full-Stack Developer",
     "VASU President",
     "Campus IT Support",
@@ -20,6 +21,7 @@ export const profile = {
   bio: [
     "I grew up in Debre Markos, Ethiopia, before coming to Vassar College to study Computer Science and Mathematics. Back home I built my high school's first website from scratch, which is honestly what got me hooked on software in the first place.",
     "At Vassar I'm president of the African Students Union, where I lead the team building our own web platform for around 150 members, and I work IT support for the whole campus. This fall I'm starting as a teaching assistant for our functional programming course.",
+    "I'm also interning as a software engineer at Eugenia Grace, a luxury artisanal marketplace, where I build and customize the Shopify storefront and turn business requirements into working features.",
     "I'm bilingual in English and Amharic, and I spent last summer mentoring Ethiopian high schoolers through the U.S. college application process. I care about building things that work for people outside the default assumption of who's using them.",
   ],
 };
@@ -33,6 +35,17 @@ export type Job = {
 };
 
 export const experience: Job[] = [
+  {
+    role: "Software Engineering Intern",
+    org: "Eugenia Grace",
+    location: "Remote",
+    period: "Aug 2026 — Present",
+    bullets: [
+      "Build and customize a luxury artisanal marketplace storefront on Shopify (Liquid, HTML, CSS, JavaScript), translating business requirements from the founding team into technical implementation.",
+      "Own the catalog data layer — product taxonomy, metafields, tag-driven collections, and 25+ scoped customer-facing filters through Shopify Search & Discovery.",
+      "Audited store configuration across shipping, packaging, payments, and policies, and produced launch-readiness documentation for the team.",
+    ],
+  },
   {
     role: "Computing & Information Services (CIS) Assistant",
     org: "Vassar College Computing and Information Services",
